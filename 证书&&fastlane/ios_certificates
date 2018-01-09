@@ -1,0 +1,28 @@
+##  In the iOS Dev Portal there are two main assets needed to build an app:
+开发证书干嘛的
+> 证明APP 合法性 和完整性
+Development证书用来开发和调试应用程序
+Production主要用来分发应用程序
+
+如何安装
+
+**A certificate for signing the app**
+- Create a Certificate Signing Request (CSR)
+- Upload the CSR to the Apple iOS Dev Center in order to create a Certificate
+- Download and store the certificate
+Install the certificates on any machines that will be building the app
+
+
+
+Provisioning Profiles是干嘛的？
+![](http://ohbzayk4i.bkt.clouddn.com/17-11-3/21394690.jpg)
+将App ID（单选）、证书（Certificates，可多选）和设备（Devices，可多选）打包到一起。
+会被打入ipa包中，安装应用程序时，Provisioning Profile文件被拷贝到iOS设备中，运行该iOS App的设备也通过它来认证安装的程序。
+
+
+
+
+
+
+[IOS 证书那些事](http://www.cnblogs.com/wangyang1213/p/5209119.html)
+[Automating iOS Certificate and Profile Syncing with Fastlane](http://www.macadamian.com/2017/09/26/automating-ios-certificate-and-profile-syncing-with-fastlane/)

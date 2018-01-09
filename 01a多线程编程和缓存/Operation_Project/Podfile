@@ -1,0 +1,5 @@
+use_frameworks!
+
+target 'ClassicPhotos' do
+    pod 'Kingfisher', '3.2.2'
+end
