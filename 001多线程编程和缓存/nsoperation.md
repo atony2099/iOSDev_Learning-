@@ -3,15 +3,8 @@ title: NSOperation
 date: 2016-2-03 15:13:11
 tags:
 ---
-
-
-
-
-
 #### cancel
-
 A Boolean value indicating whether the operation has been cancelled
-
 The default value of this property is [false](apple-reference-documentation://hsgzyHrlAT). Calling the [cancel()](apple-reference-documentation://hsOwwt40xm) method of this object sets the value of this property to [true](apple-reference-documentation://hssD4Kc5Ce). Once canceled, an operation must move to the finished state.
 
 Canceling an operation does not actively stop the receiver’s code from executing. An operation object is responsible for calling this method periodically and stopping itself if the method returns [true](apple-reference-documentation://hssD4Kc5Ce).

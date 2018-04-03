@@ -8,6 +8,48 @@ tags:
 
 
 
+视图最终渲染的
+CompositedPosition.x = View.frame.origin.x - Superview.bounds.origin.x;
+
+CompositedPosition.y = View.frame.origin.y - Superview.bounds.origin.y;
+
+
+scrollView contentOffset 其实是通过不断改变自身的bouds来达到视图移动的效果
+
+```
+  - (void)setContentOffset:(CGPoint)offset
+  {
+      CGRect bounds = [self bounds];
+      bounds.origin = offset;
+      [self setBounds:bounds];
+  }
+```
+
+
+可视区域
+
+当前scrollview 的size 就是可视区域，当用来显示内容
+![](https://objccn.io/images/issues/issue-3/SV5.png)
+
+contentSize展示所有的内容， scollview通过不断改变自己的bounds来遍历contentSize的内容
+
+
+![](https://objccn.io/images/issues/issue-3/SV6.png
+滑动到最小值后，相对可视区域继续下滑
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #### Base
